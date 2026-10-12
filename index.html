@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jasur Abdullayev — Frontend dasturchi</title>
+    <meta
+      name="description"
+      content="Jasur Abdullayev — Toshkentlik yosh frontend dasturchi. Loyihalar, ko'nikmalar va aloqa."
+    />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap header__in">
+        <a href="#hero" class="logo">jasur.dev</a>
+        <button
+          class="menu-btn"
+          aria-label="Menyuni ochish"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="nav" class="nav">
+          <a href="#about">Men haqimda</a>
+          <a href="#skills">Ko'nikmalar</a>
+          <a href="#projects">Loyihalar</a>
+          <a href="#education">Ta'lim</a>
+          <a href="#contact" class="nav__cta">Aloqa</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="wrap hero__in">
+          <div class="hero__text">
+            <p class="hero__hi">Salom, men</p>
+            <h1>Jasur Abdullayev</h1>
+            <p class="hero__role">Frontend dasturchi va UI dizayner</p>
+            <p class="hero__slogan">
+              Murakkab g'oyalarni sodda, tez va chiroyli veb-sahifalarga
+              aylantiraman.
+            </p>
+            <div class="hero__btns">
+              <a class="btn btn--main" href="#projects">Loyihalarni ko'rish</a>
+              <a class="btn" href="#contact">Bog'lanish</a>
+            </div>
+          </div>
+          <img
+            class="hero__img"
+            src="images/avatar.svg"
+            alt="Jasur Abdullayevning rasmi"
+            width="360"
+            height="360"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="wrap narrow">
+          <h2>Men haqimda</h2>
+          <p>
+            Men Toshkentda yashayman, 10-sinfda o'qiyman va ikki yildan beri
+            veb-dasturlash bilan shug'ullanaman. Menga foydalanuvchi bir
+            qarashda tushunadigan, telefonda ham qulay ishlaydigan interfeyslar
+            yaratish yoqadi. Hozir Python va algoritmlarni chuqurroq
+            o'rganyapman. Maqsadim — maktabni tugatgach, kompyuter fanlari
+            yo'nalishida o'qib, jamiyatga foyda keltiradigan mahsulotlar
+            yaratish.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--alt">
+        <div class="wrap">
+          <h2>Ko'nikmalar</h2>
+          <div class="skills">
+            <div>
+              <h3>Yaxshi bilaman</h3>
+              <ul class="chips">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsiv dizayn</li>
+                <li>Git va GitHub</li>
+              </ul>
+            </div>
+            <div>
+              <h3>O'rganyapman</h3>
+              <ul class="chips">
+                <li>Python</li>
+                <li>React</li>
+                <li>Figma</li>
+                <li>Telegram bot (aiogram)</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Qo'shimcha</h3>
+              <ul class="chips">
+                <li>Jamoada ishlash</li>
+                <li>Ingliz tili (B1)</li>
+                <li>Muammoni tahlil qilish</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="wrap">
+          <h2>Loyihalar</h2>
+          <p class="lead">
+            Har bir loyiha bitta aniq muammoni hal qilish uchun yaratilgan.
+          </p>
+
+          <article class="project">
+            <img
+              src="images/project-1.svg"
+              alt="Dars jadvali ilovasining ko'rinishi"
+              width="560"
+              height="350"
+              loading="lazy"
+            />
+            <div class="project__body">
+              <h3>Dars jadvali</h3>
+              <p class="tech">HTML · CSS · JavaScript</p>
+              <dl>
+                <dt>Muammo</dt>
+                <dd>
+                  Qog'ozdagi dars jadvali o'zgarganda o'quvchilar buni kech
+                  bilishardi.
+                </dd>
+                <dt>Yechim</dt>
+                <dd>
+                  Jadvalni telefonda ochiladigan, bugungi darslarni alohida
+                  ko'rsatadigan veb-ilova qildim.
+                </dd>
+                <dt>Natija</dt>
+                <dd>Sinfdagi 28 o'quvchi har kuni foydalanadi.</dd>
+              </dl>
+              <div class="links">
+                <a
+                  class="btn btn--main"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--rev">
+            <img
+              src="images/project-2.svg"
+              alt="Lug'at o'rgatuvchi Telegram bot suhbati"
+              width="560"
+              height="350"
+              loading="lazy"
+            />
+            <div class="project__body">
+              <h3>Lug'at bot</h3>
+              <p class="tech">Python · aiogram · SQLite</p>
+              <dl>
+                <dt>Muammo</dt>
+                <dd>Yangi inglizcha so'zlar tez esdan chiqib ketardi.</dd>
+                <dt>Yechim</dt>
+                <dd>
+                  Har kuni 5 ta so'z yuboradigan va ertasi kuni so'rab turadigan
+                  Telegram bot yozdim.
+                </dd>
+                <dt>Natija</dt>
+                <dd>
+                  Do'stlarim orasida 150 dan ortiq foydalanuvchi to'plandi.
+                </dd>
+              </dl>
+              <div class="links">
+                <a
+                  class="btn btn--main"
+                  href="https://t.me/"
+                  target="_blank"
+                  rel="noopener"
+                  >Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              src="images/project-3.svg"
+              alt="Xarajatlar hisoblagichi diagrammasi"
+              width="560"
+              height="350"
+              loading="lazy"
+            />
+            <div class="project__body">
+              <h3>Xarajat hisoblagich</h3>
+              <p class="tech">HTML · CSS · JavaScript</p>
+              <dl>
+                <dt>Muammo</dt>
+                <dd>Cho'ntak pulim qayerga sarflanishini bilmasdim.</dd>
+                <dt>Yechim</dt>
+                <dd>
+                  Xarajatlarni toifalarga bo'lib yozadigan va oylik diagramma
+                  chizadigan sahifa yaratdim.
+                </dd>
+                <dt>Natija</dt>
+                <dd>
+                  Oylik keraksiz xarajatlarim taxminan uchdan biriga kamaydi.
+                </dd>
+              </dl>
+              <div class="links">
+                <a
+                  class="btn btn--main"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Demo</a
+                ><a
+                  class="btn"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section section--alt">
+        <div class="wrap">
+          <h2>Ta'lim va yutuqlar</h2>
+          <ol class="timeline">
+            <li>
+              <time>2024 — hozir</time>
+              <h3>Ixtisoslashtirilgan maktab, 10-sinf</h3>
+              <p>Informatika va matematika chuqurlashtirilgan yo'nalishi.</p>
+            </li>
+            <li>
+              <time>2025</time>
+              <h3>Informatika olimpiadasi, tuman bosqichi</h3>
+              <p>2-o'rin.</p>
+            </li>
+            <li>
+              <time>2025</time>
+              <h3>freeCodeCamp: Responsive Web Design</h3>
+              <p>Sertifikat olingan, 5 ta amaliy loyiha topshirilgan.</p>
+            </li>
+            <li>
+              <time>2024</time>
+              <h3>Harvard CS50x</h3>
+              <p>Dasturlash asoslari kursi, 6 ta topshiriq bajarilgan.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="wrap narrow">
+          <h2>Aloqa</h2>
+          <p class="lead">
+            Loyiha, stajirovka yoki hamkorlik bo'yicha yozing — bir kun ichida
+            javob beraman.
+          </p>
+          <ul class="contacts">
+            <li>
+              <span>Email</span
+              ><a href="mailto:jasur@example.com">jasur@example.com</a>
+            </li>
+            <li>
+              <span>Telegram</span
+              ><a href="https://t.me/" target="_blank" rel="noopener"
+                >@jasur_dev</a
+              >
+            </li>
+            <li>
+              <span>GitHub</span
+              ><a href="https://github.com/" target="_blank" rel="noopener"
+                >github.com/jasur-dev</a
+              >
+            </li>
+            <li>
+              <span>LinkedIn</span
+              ><a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                >linkedin.com/in/jasur-dev</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">© <span id="year">2026</span> Jasur Abdullayev</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
